@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="567.0" prefWidth="297.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.tripadvisor.controllers.RootController">
+   <children>
+      <ImageView fitHeight="656.0" fitWidth="297.0" layoutY="-88.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/img/loginCuracion.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnCuracion" layoutX="74.0" layoutY="108.0" mnemonicParsing="false" onMouseClicked="#btnCuracionOnMouseClicked" prefHeight="65.0" prefWidth="61.0" style="-fx-background-color: transparent;" text="Metodos de curacion" textFill="#0000002d">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="521.0" prefWidth="287.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.tripadvisor.controllers.TestPlantaController">
+   <children>
+      <ImageView fitHeight="547.0" fitWidth="306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/listaPlant.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="379.0" layoutX="41.0" layoutY="129.0" stroke="WHITE" strokeType="INSIDE" width="225.0" />
+      <ImageView fx:id="imagenplant" fitHeight="265.0" fitWidth="191.0" layoutX="59.0" layoutY="129.0" onMouseDragged="#nuevaimagenOnMouseDragged" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnguardar" layoutX="107.0" layoutY="295.0" mnemonicParsing="false" onMouseClicked="#btnguardarOnMouseClicked" style="-fx-background-color: #58e093;" text="Guardar datos " textFill="#0f1b14" />
+      <ComboBox fx:id="comboxTallo" layoutX="58.0" layoutY="333.0" onAction="#comboxTalloOnAction" prefHeight="28.0" prefWidth="127.0" promptText="Ingrese el tallo" style="-fx-background-color: #559621;" visibleRowCount="4">
+         <padding>
+            <Insets left="1.0" />
+         </padding>
+      </ComboBox>
+      <ComboBox fx:id="comboxTemperatura" layoutX="59.0" layoutY="371.0" onAction="#comboxTemperaturaOnAction" prefHeight="28.0" prefWidth="168.0" promptText="Ingrese la temperatura" style="-fx-background-color: #559621;" visibleRowCount="4" />
+      <ComboBox fx:id="comboxSuelo" layoutX="59.0" layoutY="415.0" onAction="#comboxSueloOnAction" prefHeight="28.0" prefWidth="168.0" promptText="Tipo de suelo" style="-fx-background-color: #559621;" visibleRowCount="4" />
+      <ComboBox fx:id="comboxRiego" layoutX="59.0" layoutY="452.0" onAction="#comboxRiegoOnAction" prefHeight="28.0" prefWidth="150.0" promptText="Tiempo de riego" style="-fx-background-color: #559621;" visibleRowCount="3" />
+      <Label layoutX="91.0" layoutY="59.0" prefHeight="43.0" prefWidth="127.0" style="-fx-background-color: #ffffff;" text="Tratamiento PlantVital">
+         <font>
+            <Font name="Arial Narrow" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnsalir" layoutX="119.0" layoutY="508.0" mnemonicParsing="false" onMouseClicked="#btnSalirOnMouseClicked" prefHeight="36.0" prefWidth="67.0" style="-fx-background-color: transparent;" text="salir" textFill="#00000073" />
+      <Button fx:id="btnregresar" layoutX="40.0" layoutY="508.0" mnemonicParsing="false" onMouseClicked="#btnregresarOnMouseClicked" prefHeight="36.0" prefWidth="67.0" style="-fx-background-color: transparent;" text="regresar" textFill="#00000073" />
+   </children>
+</AnchorPane>

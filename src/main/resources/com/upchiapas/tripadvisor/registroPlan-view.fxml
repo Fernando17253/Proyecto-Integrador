@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="487.0" prefWidth="287.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.tripadvisor.controllers.RegistroPlanController">
+   <children>
+      <ImageView fitHeight="555.0" fitWidth="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/listaPlant.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnGuardar" layoutX="111.0" layoutY="439.0" mnemonicParsing="false" onMouseClicked="#btnGuardarOnMouseClicked" prefHeight="25.0" prefWidth="65.0" text="Guardar" />
+      <Button fx:id="btnSalir" layoutX="33.0" layoutY="485.0" mnemonicParsing="false" onMouseClicked="#btnSalirOnMouseClicked" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: transparent;" text="salir" />
+      <ComboBox fx:id="comboxPlan" layoutX="55.0" layoutY="374.0" onAction="#comboxPlan" prefWidth="150.0" promptText="Tipo de raiz" />
+      <ComboBox fx:id="comboxFruto" layoutX="55.0" layoutY="408.0" onAction="#comboxFrutoOnAction" prefWidth="150.0" promptText="Tipo de fruto " />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="206.0" layoutX="40.0" layoutY="120.0" stroke="WHITE" strokeType="INSIDE" width="208.0" />
+      <ComboBox fx:id="comboxColor1" layoutX="55.0" layoutY="336.0" onAction="#coboxColorOnAction" prefWidth="150.0" promptText="Color de hoja" visibleRowCount="3" />
+      <ComboBox layoutX="55.0" layoutY="301.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

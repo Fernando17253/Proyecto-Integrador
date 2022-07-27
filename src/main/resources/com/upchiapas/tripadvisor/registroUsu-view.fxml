@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="327.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.tripadvisor.controllers.RegitroUsuController">
+   <children>
+      <ImageView fitHeight="337.0" fitWidth="600.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/RegistroUsu.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff52" height="337.0" layoutX="162.0" stroke="BLACK" strokeType="INSIDE" width="282.0" />
+      <Label layoutX="183.0" layoutY="74.0" text="Ingrese su nombre " textFill="#0a0404">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="183.0" layoutY="144.0" text="Ingrese su correo" textFill="#0a0404">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="183.0" layoutY="218.0" text="Ingrese su password " textFill="#0a0404">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRegistrar" layoutX="364.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#btnRegistrarUsuOnMouseClicked" text="Registrar" />
+      <TextField fx:id="txtNombreUsu" layoutX="177.0" layoutY="99.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPasswordUsu" layoutX="177.0" layoutY="243.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textCorreoUsu" layoutX="177.0" layoutY="169.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
